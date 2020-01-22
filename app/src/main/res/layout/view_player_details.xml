@@ -13,7 +13,9 @@
         android:layout_height="match_parent"
         android:alpha="0.8"
         android:background="@color/black"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:forceDarkAllowed="false"
+        />
 
     <View
         android:id="@+id/colorIndicatorWhite"
@@ -21,7 +23,9 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="6dp"
         android:background="@color/black"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:forceDarkAllowed="false"
+        />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/iconContainer"

@@ -12,6 +12,7 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowBackground">@color/colorOffWhite</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="android:forceDarkAllowed">true</item>
     </style>
 
     <style name="LoginLabel">

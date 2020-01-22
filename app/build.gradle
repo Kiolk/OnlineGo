@@ -6,11 +6,11 @@ apply plugin: 'io.fabric'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "io.zenandroid.onlinego"
         minSdkVersion 20
-        targetSdkVersion 28
+        targetSdkVersion 29
 //        versionCode System.getenv("APPCENTER_BUILD_ID") as Integer ?: 54
         versionCode 42
         versionName "alpha_b${versionCode}"

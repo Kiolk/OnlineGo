@@ -2,6 +2,7 @@ package io.zenandroid.onlinego.views
 
 import android.content.Context
 import android.graphics.*
+import android.os.Build
 import androidx.core.content.res.ResourcesCompat
 import android.util.AttributeSet
 import android.util.Log
@@ -126,6 +127,10 @@ class BoardView : View {
 
         if(texture == null) {
             texture = BitmapFactory.decodeResource(resources, R.mipmap.texture)
+        }
+
+        if(Build.VERSION.SDK_INT >= 29) {
+            isForceDarkAllowed = false
         }
     }
 
@@ -415,7 +420,7 @@ class BoardView : View {
         texture?.let {
             val src = Rect(0, 0, it.width, it.height)
             val dest = Rect(0, 0, width, height)
-            canvas.drawBitmap(texture, src, dest, null)
+            canvas.drawBitmap(it, src, dest, null)
         } ?: Log.e("BoardView", "Null background!!!")
     }
 
